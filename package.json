@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Automerge storage adapter for AWS S3",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "type": "module",
   "scripts": {
     "build": "tsc"
@@ -18,6 +22,7 @@
     "s3"
   ],
   "author": "Alex Chuev <alex@chuev.com>",
+  "repository": "https://github.com/alex-chuev/automerge-repo-storage-s3",
   "license": "ISC",
   "devDependencies": {
     "@automerge/automerge-repo": "^1.0.19",
