@@ -62,9 +62,10 @@ export function runStorageAdapterTests(setup: SetupFn, title?: string): void {
         await adapter.save(['AAAAA', 'snapshot', 'yyyyy'], PAYLOAD_B())
         await adapter.save(['AAAAA', 'sync-state', 'zzzzz'], PAYLOAD_C())
 
+	// NOTE: We have switched the order of payloads vs @automerge/repo (order doesn't matter)
         expect(await adapter.loadRange(['AAAAA'])).toStrictEqual([
-          { key: ['AAAAA', 'sync-state', 'xxxxx'], data: PAYLOAD_A() },
           { key: ['AAAAA', 'snapshot', 'yyyyy'], data: PAYLOAD_B() },
+          { key: ['AAAAA', 'sync-state', 'xxxxx'], data: PAYLOAD_A() },
           { key: ['AAAAA', 'sync-state', 'zzzzz'], data: PAYLOAD_C() },
         ])
 
