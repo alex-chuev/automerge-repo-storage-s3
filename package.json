@@ -22,12 +22,10 @@
   "repository": "https://github.com/alex-chuev/automerge-repo-storage-s3",
   "license": "ISC",
   "devDependencies": {
-    "@automerge/automerge": "^3.1.1",
     "@automerge/automerge-repo": "^2.2.0",
     "@types/node": "^24.2.0",
     "prettier": "^3.1.1",
     "s3rver": "^3.7.1",
-    "tsc": "^2.0.4",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   },
