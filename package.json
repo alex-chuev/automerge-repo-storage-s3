@@ -1,6 +1,6 @@
 {
   "name": "automerge-repo-storage-s3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Automerge storage adapter for AWS S3",
   "main": "dist/index.js",
   "type": "module",
