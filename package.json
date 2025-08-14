@@ -1,15 +1,12 @@
 {
   "name": "automerge-repo-storage-s3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Automerge storage adapter for AWS S3",
   "main": "dist/index.js",
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "vitest"
   },
   "keywords": [
     "crdt",
@@ -25,8 +22,12 @@
   "repository": "https://github.com/alex-chuev/automerge-repo-storage-s3",
   "license": "ISC",
   "devDependencies": {
-    "@automerge/automerge-repo": "^1.0.19",
-    "prettier": "^3.1.1"
+    "@automerge/automerge-repo": "^2.2.0",
+    "@types/node": "^24.2.0",
+    "prettier": "^3.1.1",
+    "s3rver": "^3.7.1",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   },
   "peerDependencies": {
     "@aws-sdk/client-s3": "^3.481.0"
